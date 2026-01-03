@@ -10,6 +10,7 @@ export const siteData = {
   navigation: [
     { label: "Creations", href: "/creations" },
     { label: "Work", href: "/work" },
+    { label: "Writings", href: "/writings" },
     { label: "More", href: "/more" },
   ],
   contact: {
