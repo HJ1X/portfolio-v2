@@ -5,6 +5,7 @@ import Image from "next/image";
 import { siteData } from "@/lib/data";
 import { Highlight } from "@/components/ui/hero-highlight";
 import Link from "next/link";
+import { Github, Twitter, Calendar } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -34,21 +35,42 @@ const Hero = () => {
               .
             </div>
 
-            <div className="animate-slideUp animate-delay-400">
+            <div className="flex items-center gap-4 animate-slideUp animate-delay-400">
               <Button
                 size="lg"
                 variant="outline"
-                className="text-base px-8 py-6 rounded-full border-2 hover:bg-foreground hover:text-background transition-all duration-300"
+                className="text-base px-8 py-6 rounded-full border-2 hover:opacity-80 hover:text-muted-foreground transition-all duration-300"
                 asChild
               >
                 <a
                   href={siteData.profile.calLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="flex items-center gap-2"
                 >
-                  Let&apos;s chat →
+                  <Calendar className="w-4 h-4" />
+                  Let&apos;s connect
                 </a>
               </Button>
+
+              <div className="flex items-center gap-2">
+                <Link
+                  href={siteData.social.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full hover:bg-muted transition-colors"
+                >
+                  <Github className="w-5 h-5" />
+                </Link>
+                <Link
+                  href={siteData.social.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full hover:bg-muted transition-colors"
+                >
+                  <Twitter className="w-5 h-5" />
+                </Link>
+              </div>
             </div>
           </div>
 
