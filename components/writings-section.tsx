@@ -105,7 +105,7 @@ export const WritingsSection = () => {
                                             </div>
                                         </div>
 
-                                        <h3 className="text-2xl font-semibold text-foreground mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                        <h3 className="text-2xl font-semibold text-foreground mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
                                             {article.title}
                                         </h3>
 

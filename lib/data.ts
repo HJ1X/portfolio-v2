@@ -11,15 +11,15 @@ export const siteData = {
     { label: "Creations", href: "/creations" },
     { label: "Work", href: "/work" },
     { label: "Writings", href: "/writings" },
-    { label: "More", href: "/more" },
+    { label: "Contact", href: "/contact" },
   ],
   contact: {
-    calLink: "https://cal.com/himanshujangid",
+    email: "sahilhsgupta7@gmail.com",
   },
   social: {
-    github: "https://github.com/himanshujangid",
-    linkedin: "https://linkedin.com/in/himanshujangid",
-    twitter: "https://twitter.com/himanshujangid",
+    github: "https://github.com/Sahil2012/",
+    twitter: "https://x.com/guptasahil7/",
+    linkedin: "https://www.linkedin.com/in/sahil-gupta7/",
   },
 } as const;
 
