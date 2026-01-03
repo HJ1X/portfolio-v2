@@ -1,10 +1,11 @@
 export const siteData = {
   profile: {
-    name: "Himanshu J.",
-    fullName: "Himanshu Jangid",
-    title: "Building digital experiences",
-    description:
-      "Full-stack developer crafting elegant solutions with modern technologies. Passionate about creating intuitive and performant web applications.",
+    name: "Sahil G.",
+    fullName: "Sahil Gupta",
+    title: "Building & shipping\nreal-world products.",
+    currentCompany: "HSBC",
+    companyUrl: "https://www.hsbc.com/",
+    calLink: "https://cal.com/sahil-gupta-7/15min?overlayCalendar=true"
   },
   navigation: [
     { label: "Creations", href: "/creations" },

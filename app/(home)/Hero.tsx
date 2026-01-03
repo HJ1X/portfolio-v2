@@ -3,6 +3,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { siteData } from "@/lib/data";
+import { Highlight } from "@/components/ui/hero-highlight";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -11,13 +13,26 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center h-full">
           {/* Left Content - Positioned slightly above center */}
           <div className="flex flex-col gap-8 justify-center">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] animate-slideUp">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold tracking-tighter text-foreground leading-[1.1] animate-slideUp whitespace-pre-line">
               {siteData.profile.title}
             </h1>
 
-            <p className="text-lg md:text-xl text-foreground/70 animate-slideUp animate-delay-200">
-              {siteData.profile.description}
-            </p>
+
+            <div className="text-xl md:text-2xl text-muted-foreground font-medium tracking-tight leading-snug animate-slideUp animate-delay-200">
+              Currently building{" "}
+              <Link href="https://Naukri-outreach.vercel.app/" className="hover:opacity-80 transition-opacity">
+                <Highlight className="text-foreground">Naukri Outreach</Highlight>
+              </Link>{" "}
+              and{" "}
+              <Link href="https://novacraftsai.com/" className="hover:opacity-80 transition-opacity">
+                <Highlight className="text-foreground">NovaCraftsAI</Highlight>
+              </Link>
+              , while engineering production systems at{" "}
+              <Link href={siteData.profile.companyUrl} className="hover:opacity-80 transition-opacity">
+                <Highlight className="text-foreground">{siteData.profile.currentCompany}</Highlight>
+              </Link>
+              .
+            </div>
 
             <div className="animate-slideUp animate-delay-400">
               <Button
@@ -27,7 +42,7 @@ const Hero = () => {
                 asChild
               >
                 <a
-                  href={siteData.contact.calLink}
+                  href={siteData.profile.calLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
