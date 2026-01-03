@@ -11,7 +11,7 @@ export const siteData = {
     { label: "Creations", href: "/creations" },
     { label: "Work", href: "/work" },
     { label: "Writings", href: "/writings" },
-    { label: "Contact", href: "/contact" },
+    { label: "Hire Me", href: "/contact" },
   ],
   contact: {
     email: "sahilhsgupta7@gmail.com",
