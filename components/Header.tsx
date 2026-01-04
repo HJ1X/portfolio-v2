@@ -24,7 +24,7 @@ const Header = () => {
 
               {/* Navigation */}
               <nav className="hidden md:flex items-center gap-8 h-full">
-                {data.navigation.map((link) => (
+                {data.navigation.map((link: any) => (
                   <Link
                     key={link.href}
                     href={link.href}

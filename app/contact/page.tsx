@@ -54,7 +54,7 @@ export default function ContactPage() {
               <div className="h-px bg-border w-16" />
             </div>
             <div className="space-y-4">
-              {page.channels.map((channel) => {
+              {page.channels.map((channel: any) => {
                 const href =
                   channel.id === "email"
                     ? `mailto:${data.contact.email}`

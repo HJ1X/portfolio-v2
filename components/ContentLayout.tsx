@@ -1,7 +1,6 @@
-import { motion } from "motion/react";
+import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 import Headline from "./Headline";
-import { cn } from "@/lib/utils";
 
 interface ContentLayoutProps {
   children: ReactNode;

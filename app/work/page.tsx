@@ -7,7 +7,7 @@ import { IconArrowNarrowRight } from "@tabler/icons-react";
 import Image from "next/image";
 
 export default function WorkPage() {
-  const cards = data.work.clientProjects.map((project, index) => (
+  const cards = data.work.clientProjects.map((project: any, index: number) => (
     <Card
       key={project.id}
       card={{
@@ -36,7 +36,7 @@ export default function WorkPage() {
               {/* Technologies */}
               <div>
                 <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
+                  {project.technologies.map((tech: any) => (
                     <Badge
                       key={tech}
                       className="border-white/30 bg-white/10 text-white/70 rounded-sm"

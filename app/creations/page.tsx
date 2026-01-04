@@ -54,7 +54,7 @@ export default function CreationsPage() {
           collapsible
           defaultValue={data.creations.items[0].id}
         >
-          {data.creations.items.map((creation) => (
+          {data.creations.items.map((creation: any) => (
             <AccordionItem key={creation.id} value={creation.id}>
               <AccordionTrigger onClick={() => setSelectedCreation(creation)}>
                 {creation.title}

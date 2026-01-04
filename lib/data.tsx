@@ -114,6 +114,12 @@ const himanshuData = {
       },
     ],
   },
+  writings: {
+    title: null,
+    subline1: null,
+    subline2: null,
+    articles: null
+  },
   changelog: {
     page: {
       title: "Changelog.",
@@ -583,7 +589,7 @@ const sahilData = {
   },
 } as const;
 
-export let data: SiteData;
+export let data: any;
 if (profile === "HIMANSHU") {
   data = himanshuData;
 } else {

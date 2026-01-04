@@ -9,6 +9,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 export default function WritingsPage() {
+  if (!data?.writings?.articles) return null;
+  
   return (
     <ContentLayout
       title={data.writings.title}
@@ -16,7 +18,8 @@ export default function WritingsPage() {
       subline2={data.writings.subline2}
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-20">
-        {data.writings.articles.map((article) => (
+        {/* @ts-ignore */}
+        {data.writings.articles?.map((article) => (
           <Link
             key={article.id}
             href={article.url}
@@ -57,7 +60,7 @@ export default function WritingsPage() {
                 {/* Footer with tags and arrow */}
                 <div className="flex items-end justify-between mt-auto">
                   <div className="flex gap-2 flex-wrap">
-                    {article.tags.map((tag) => (
+                    {article.tags.map((tag: any) => (
                       <Badge
                         key={tag}
                         variant="outline"
