@@ -1,19 +1,15 @@
 import ContentLayout from "@/components/ContentLayout";
+import { Timeline } from "@/components/ui/timeline";
+import { data } from "@/lib/data";
 
-const page = () => {
+export default function ChangelogPage() {
   return (
     <ContentLayout
-      title="Life Changelog"
-      subline1=""
-      subline2=""
+      title={data.changelog.page.title}
+      subline1={data.changelog.page.subline1}
+      subline2={data.changelog.page.subline2}
     >
-      <div className="flex flex-col gap-6">
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-lg leading-relaxed font-sans max-w-3xl">
-          {""}
-        </p>
-      </div>
+      <Timeline items={data.work.fullTime} />
     </ContentLayout>
-  )
+  );
 }
-
-export default page

@@ -13,8 +13,8 @@ const himanshuData = {
   navigation: [
     { label: "Creations", href: "/creations" },
     { label: "Work", href: "/work" },
-    { label: "Hire Me", href: "/contact" },
     { label: "Changelog", href: "/changelog" },
+    { label: "Contact", href: "/contact" },
   ],
   contact: {
     email: "jaroli.himanshu.work@gmail.com",
@@ -113,6 +113,13 @@ const himanshuData = {
         image: "/nova-crafts-ai.png",
       },
     ],
+  },
+  changelog: {
+    page: {
+      title: "Changelog.",
+      subline1: "My professional journey.",
+      subline2: "Full-time roles and career milestones.",
+    },
   },
   work: {
     page: {
@@ -264,65 +271,6 @@ const himanshuData = {
       },
     ],
   },
-  writings: {
-    title: "Writings.",
-    subline1: "Thoughts on engineering, security, and system design.",
-    subline2: (
-      <span>
-        Read more on{" "}
-        <Link
-          href="https://medium.com/@sahilhsgupta7"
-          target="_blank"
-          className="text-foreground border-b border-foreground/20 hover:border-foreground transition-colors"
-        >
-          Medium (@sahilhsgupta7)
-        </Link>
-      </span>
-    ),
-    articles: [
-      {
-        id: "cors-guide",
-        title: "What is CORS? Why is it important?",
-        excerpt:
-          "CORS stands for Cross-Origin Resource Sharing. It is a browser mechanism which enables controlled access to resources located outside of a given domain.",
-        date: "Dec 12, 2025",
-        readTime: "4 min read",
-        tags: ["Web Dev", "Security"],
-        url: "https://medium.com/@sahilhsgupta7/what-is-cors-why-is-it-important-9a875b0253cd",
-      },
-      {
-        id: "ssl-works",
-        title: "How SSL Works / How Do You Secure Your Web App?",
-        excerpt:
-          "Let’s assume your server is deployed in a remote location, and a user wants to interact with your application secure ly over the internet.",
-        date: "Dec 10, 2025",
-        readTime: "6 min read",
-        tags: ["System Design", "Security"],
-        url: "https://medium.com/@sahilhsgupta7/how-ssl-works-how-do-you-secure-your-web-app-a72441065f02",
-      },
-      {
-        id: "scaling-username",
-        title:
-          "Scaling Username Availability Checks Like Meta & Google: From Indexes to Bloom Filters",
-        excerpt:
-          "Ever wondered how big platforms like Meta, Google, or Twitter instantly tell you if your dream username is available, even after billions…",
-        date: "Aug 21, 2025",
-        readTime: "8 min read",
-        tags: ["Bloom Filters", "Scaling"],
-        url: "https://medium.com/@sahilhsgupta7/scaling-username-availability-checks-like-meta-google-from-indexes-to-bloom-filters-4d3c9863b005",
-      },
-      {
-        id: "bloom-filters",
-        title: "What Are Bloom Filters? How do they work?",
-        excerpt:
-          "Ever wondered how massive platforms like Meta, Google, or Twitter know instantly if your username is taken, even with billions of users?",
-        date: "Aug 21, 2025",
-        readTime: "5 min read",
-        tags: ["Bloom Filters", "Algorithms"],
-        url: "https://medium.com/@sahilhsgupta7/what-are-bloom-filters-how-do-they-work-e21a73704d2f",
-      },
-    ],
-  },
 } as const;
 
 const sahilData = {
@@ -416,6 +364,13 @@ const sahilData = {
         image: "/nova-crafts-ai.png",
       },
     ],
+  },
+  changelog: {
+    page: {
+      title: "Changelog.",
+      subline1: "My professional journey.",
+      subline2: "Full-time roles and career milestones.",
+    },
   },
   work: {
     page: {

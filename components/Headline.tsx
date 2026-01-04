@@ -17,7 +17,7 @@ const Headline = ({ title, subline1, subline2 }: HeadlineProps) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="text-3xl md:text-5xl font-semibold tracking-tighter text-foreground leading-[1.1] animate-slideUp whitespace-pre-line mb-6"
+        className="text-3xl md:text-5xl font-bold tracking-tighter text-foreground leading-[1.1] animate-slideUp whitespace-pre-line mb-6"
       >
         {title}
       </motion.h2>
