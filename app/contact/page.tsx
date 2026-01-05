@@ -20,9 +20,9 @@ export default function ContactPage() {
           {/* Left: Primary CTA */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
             className="flex flex-col gap-6"
           >
             <Link
@@ -42,9 +42,9 @@ export default function ContactPage() {
           {/* Right: Secondary Links */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.4 }}
             className="flex flex-col gap-8 lg:pt-4"
           >
             <div className="space-y-2">

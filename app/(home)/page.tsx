@@ -1,8 +1,11 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { data } from "@/lib/data";
 import Link from "next/link";
 import { Github, Twitter, Calendar } from "lucide-react";
+import { motion } from "motion/react";
 
 export default function Home() {
   return (
@@ -11,15 +14,30 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 lg:gap-20 items-center h-full">
           {/* Left Content - Positioned slightly above center */}
           <div className="flex flex-col gap-8 justify-center">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.2] animate-slideUp whitespace-pre-line">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.2] whitespace-pre-line"
+            >
               {data.home.title}
-            </h1>
+            </motion.h1>
 
-            <div className="text-lg md:text-xl max-w-lg text-muted-foreground font-medium tracking-wide animate-slideUp animate-delay-200">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
+              className="text-lg md:text-xl max-w-lg text-muted-foreground font-medium tracking-wide"
+            >
               {data.home.subline}
-            </div>
+            </motion.div>
 
-            <div className="flex items-center gap-4 animate-slideUp animate-delay-400">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.2, ease: "easeOut" }}
+              className="flex items-center gap-4"
+            >
               <Button size="lg" variant="default" asChild>
                 <a
                   href={data.calLink}
@@ -49,11 +67,16 @@ export default function Home() {
                   <Twitter className="w-5 h-5" />
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Right Portrait - Aligned to bottom */}
-          <div className="absolute flex bottom-0 right-0 justify-center lg:justify-end items-end animate-fadeIn animate-delay-600 h-full w-1/2">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.3, ease: "easeOut" }}
+            className="absolute flex bottom-0 right-0 justify-center lg:justify-end items-end h-full w-1/2"
+          >
             <div className="relative w-full h-full">
               <Image
                 src={data.home.image}
@@ -67,7 +90,7 @@ export default function Home() {
                 priority
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

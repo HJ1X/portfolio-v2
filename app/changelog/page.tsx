@@ -1,6 +1,9 @@
+"use client";
+
 import ContentLayout from "@/components/ContentLayout";
 import { data } from "@/lib/data";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export default function ChangelogPage() {
   return (
@@ -10,8 +13,15 @@ export default function ChangelogPage() {
       subline2={data.changelog.page.subline2}
     >
       <div className="space-y-12 md:space-y-16 pb-16">
-        {data.work.fullTime.map((experience: any) => (
-          <div key={experience.id} className="flex gap-6 md:gap-8 group">
+        {data.work.fullTime.map((experience: any, index: number) => (
+          <motion.div
+            key={experience.id}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: 0.3 + index * 0.1, ease: "easeOut" }}
+            className="flex gap-6 md:gap-8 group"
+          >
             {/* Company Logo */}
             <div className="shrink-0">
               <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center overflow-hidden border border-border">
@@ -42,7 +52,7 @@ export default function ChangelogPage() {
                 {experience.duration}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </ContentLayout>

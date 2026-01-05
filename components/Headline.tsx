@@ -13,20 +13,20 @@ const Headline = ({ title, subline1, subline2 }: HeadlineProps) => {
   return (
     <div className="mb-8 md:mb-12 max-w-3xl">
       <motion.h2
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        className="text-3xl md:text-5xl font-bold tracking-wide text-foreground leading-[1.1] animate-slideUp whitespace-pre-line mb-6"
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="text-3xl md:text-5xl font-bold tracking-wide text-foreground leading-[1.1] whitespace-pre-line mb-6"
       >
         {title}
       </motion.h2>
       <motion.p
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-        className="text-lg md:text-xl text-muted-foreground font-medium tracking-wide leading-snug animate-slideUp animate-delay-200"
+        transition={{ delay: 0.1, duration: 0.3, ease: "easeInOut" }}
+        className="text-lg md:text-xl text-muted-foreground font-medium tracking-wide leading-snug"
       >
         {subline1} <br className="hidden md:block" />
         <span className="text-foreground">{subline2}</span>
