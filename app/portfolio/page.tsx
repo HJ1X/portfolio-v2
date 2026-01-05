@@ -53,6 +53,7 @@ export default function CreationsPage() {
           type="single"
           collapsible
           defaultValue={data.creations.items[0].id}
+          className="space-y-3"
         >
           {data.creations.items.map((creation: any) => (
             <AccordionItem key={creation.id} value={creation.id}>
@@ -61,7 +62,7 @@ export default function CreationsPage() {
               </AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-3">
-                  <p className="text-base text-muted-foreground">
+                  <p className="text-background/80">
                     {creation.description}
                   </p>
                 </div>
@@ -76,7 +77,7 @@ export default function CreationsPage() {
           href={selectedCreation.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative block w-full rounded-t-xl overflow-hidden border border-b-0 border-border"
+          className="group relative block w-full rounded-t-3xl overflow-hidden border border-b-0 border-border"
           style={{ height: imageHeight > 0 ? `${imageHeight}px` : 'auto' }}
         >
           {/* Image */}

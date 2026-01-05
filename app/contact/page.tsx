@@ -68,7 +68,7 @@ export default function ContactPage() {
                     href={href}
                     target={isExternal ? "_blank" : undefined}
                     rel={isExternal ? "noopener noreferrer" : undefined}
-                    className="group flex items-center justify-between text-xl md:text-2xl font-medium text-foreground border-b border-border/50 py-5 hover:border-foreground/30 transition-all duration-300 relative"
+                    className="group flex items-center justify-between text-xl md:text-2xl font-medium text-foreground border-b border-border/50 py-5 hover:border-foreground/30 transition-all duration-300 relative tracking-wide"
                   >
                     <span className="relative group-hover:translate-x-1 transition-transform duration-300">
                       {channel.label}

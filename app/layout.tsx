@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import SmoothScrolling from "@/components/SmoothScrolling";
 import { ThemeProvider } from "@/components/providers";
 
-const inter = Inter({
-  variable: "--font-inter",
+const inter = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
-  weight: "variable",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -34,7 +33,7 @@ export default function RootLayout({
           {/* <SmoothScrolling> */}
             <div className="min-h-screen h-screen bg-background font-sans transition-colors">
               <Header />
-              <main className="relative top-16 h-[calc(100%-4rem)] w-full">
+              <main className="relative top-16 h-[calc(100%-4rem)] w-full tracking-normal">
                 {children}
               </main>
             </div>

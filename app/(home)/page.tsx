@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { data } from "@/lib/data";
-import { Highlight } from "@/components/ui/hero-highlight";
 import Link from "next/link";
 import { Github, Twitter, Calendar } from "lucide-react";
 
@@ -9,14 +8,14 @@ export default function Home() {
   return (
     <section className="relative h-full flex items-stretch">
       <div className="container mx-auto w-full px-8 h-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 lg:gap-20 items-center h-full">
           {/* Left Content - Positioned slightly above center */}
           <div className="flex flex-col gap-8 justify-center">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-foreground leading-[1.1] animate-slideUp whitespace-pre-line">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.2] animate-slideUp whitespace-pre-line">
               {data.home.title}
             </h1>
 
-            <div className="text-lg md:text-xl max-w-md text-muted-foreground font-medium tracking-tight leading-snug animate-slideUp animate-delay-200">
+            <div className="text-lg md:text-xl max-w-lg text-muted-foreground font-medium tracking-wide animate-slideUp animate-delay-200">
               {data.home.subline}
             </div>
 

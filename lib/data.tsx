@@ -11,8 +11,8 @@ const himanshuData = {
   companyUrl: "https://www.rapidstart.net/",
   calLink: "https://cal.com/himanshu-jaroli-cjbeah/30min",
   navigation: [
-    { label: "Creations", href: "/creations" },
-    { label: "Work", href: "/work" },
+    { label: "Portfolio", href: "/portfolio" },
+    { label: "Client Projects", href: "/client-projects" },
     { label: "Changelog", href: "/changelog" },
     { label: "Contact", href: "/contact" },
   ],
@@ -52,7 +52,15 @@ const himanshuData = {
     linkedin: "https://www.linkedin.com/in/himanshu-jaroli/",
   },
   home: {
-    title: "Building & shipping\nreal-world products.",
+    title: (
+      <span>
+        Building & shipping
+        <br />
+        <span className="text-gray-600 dark:text-gray-400">
+          real-world products.
+        </span>
+      </span>
+    ),
     subline: (
       <span>
         Currently building{" "}
@@ -86,7 +94,7 @@ const himanshuData = {
   },
   creations: {
     page: {
-      title: "Creations",
+      title: "Portfolio",
       subline1: "Tools that solve real problems.",
       subline2:
         "From automating job applications to crafting custom software solutions.",
@@ -118,7 +126,7 @@ const himanshuData = {
     title: null,
     subline1: null,
     subline2: null,
-    articles: null
+    articles: null,
   },
   changelog: {
     page: {
@@ -129,7 +137,7 @@ const himanshuData = {
   },
   work: {
     page: {
-      title: "Work.",
+      title: "Client Projects.",
       subline1: "Projects I've worked on.",
       subline2:
         "From automating job applications to crafting custom software solutions.",
@@ -143,6 +151,7 @@ const himanshuData = {
         id: "rapidstart",
         title: "Senior Full Stack Developer",
         company: "Rapidstart",
+        logo: "/logos/rapidstart.svg",
         duration: "Jan 2023 - Present",
         description:
           "Leading development of enterprise SaaS applications, architecting scalable solutions, and mentoring junior developers.",
@@ -157,6 +166,7 @@ const himanshuData = {
         id: "tcs",
         title: "Full Stack Developer",
         company: "Tata Consultancy Services",
+        logo: "/logos/tcs.svg",
         duration: "Jul 2021 - Dec 2022",
         description:
           "Developed and maintained enterprise applications for Fortune 500 clients, focusing on scalability and performance.",
@@ -171,6 +181,7 @@ const himanshuData = {
         id: "tcs-intern",
         title: "Software Engineering Intern",
         company: "Tata Consultancy Services",
+        logo: "/logos/tcs.svg",
         duration: "Jan 2021 - Jun 2021",
         description:
           "Contributed to full-stack development projects, learned industry best practices, and collaborated with cross-functional teams.",
@@ -185,6 +196,7 @@ const himanshuData = {
         id: "humaps-intern",
         title: "Frontend Development Intern",
         company: "Humaps",
+        logo: "/logos/humaps.svg",
         duration: "Jun 2020 - Dec 2020",
         description:
           "Developed responsive web interfaces and collaborated with designers to create intuitive user experiences.",
@@ -287,8 +299,8 @@ const sahilData = {
   companyUrl: "https://www.hsbc.com/",
   calLink: "https://cal.com/sahil-gupta-7/15min?overlayCalendar=true",
   navigation: [
-    { label: "Creations", href: "/creations" },
-    { label: "Work", href: "/work" },
+    { label: "Portfolio", href: "/creations" },
+    { label: "Client Projects", href: "/work" },
     { label: "Writings", href: "/writings" },
     { label: "Contact", href: "/contact" },
   ],
@@ -362,7 +374,7 @@ const sahilData = {
   },
   creations: {
     page: {
-      title: "Creations",
+      title: "Portfolio",
       subline1: "Tools that solve real problems.",
       subline2:
         "From automating job applications to crafting custom software solutions.",
@@ -402,7 +414,7 @@ const sahilData = {
   },
   work: {
     page: {
-      title: "Work.",
+      title: "Client Projects.",
       subline1: "Projects I've worked on.",
       subline2:
         "From automating job applications to crafting custom software solutions.",
@@ -416,6 +428,7 @@ const sahilData = {
         id: "rapidstart",
         title: "Senior Full Stack Developer",
         company: "Rapidstart",
+        logo: "/logos/rapidstart.svg",
         duration: "Jan 2023 - Present",
         description:
           "Leading development of enterprise SaaS applications, architecting scalable solutions, and mentoring junior developers.",
@@ -430,6 +443,7 @@ const sahilData = {
         id: "tcs",
         title: "Full Stack Developer",
         company: "Tata Consultancy Services",
+        logo: "/logos/tcs.svg",
         duration: "Jul 2021 - Dec 2022",
         description:
           "Developed and maintained enterprise applications for Fortune 500 clients, focusing on scalability and performance.",
@@ -444,6 +458,7 @@ const sahilData = {
         id: "tcs-intern",
         title: "Software Engineering Intern",
         company: "Tata Consultancy Services",
+        logo: "/logos/tcs.svg",
         duration: "Jan 2021 - Jun 2021",
         description:
           "Contributed to full-stack development projects, learned industry best practices, and collaborated with cross-functional teams.",
@@ -458,6 +473,7 @@ const sahilData = {
         id: "humaps-intern",
         title: "Frontend Development Intern",
         company: "Humaps",
+        logo: "/logos/humaps.svg",
         duration: "Jun 2020 - Dec 2020",
         description:
           "Developed responsive web interfaces and collaborated with designers to create intuitive user experiences.",

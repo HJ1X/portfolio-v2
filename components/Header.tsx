@@ -13,7 +13,7 @@ const Header = () => {
             {/* Logo/Name */}
             <Link
               href="/"
-              className="text-xl font-semibold tracking-tight hover:opacity-70 transition-opacity"
+              className="text-xl font-semibold tracking-wide hover:opacity-70 transition-opacity"
             >
               {data.name}
             </Link>
