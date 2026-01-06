@@ -1,7 +1,5 @@
 "use client";
 
-import { useState, useRef, useLayoutEffect } from "react";
-import Image from "next/image";
 import ContentLayout from "@/components/ContentLayout";
 import {
   Accordion,
@@ -10,9 +8,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { data } from "@/lib/data";
-import { ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
+import { useLayoutEffect, useRef, useState } from "react";
 
 export default function CreationsPage() {
   const [selectedCreation, setSelectedCreation] = useState<
