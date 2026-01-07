@@ -10,6 +10,7 @@ const himanshuData = {
   currentCompany: "RapidStart",
   companyUrl: "https://www.rapidstart.net/",
   calLink: "https://cal.com/himanshu-jaroli-cjbeah/30min",
+  resume: "/himanshu-resume.pdf",
   navigation: [
     { label: "Builds", href: "/builds" },
     { label: "Client Projects", href: "/client-projects" },
@@ -166,7 +167,7 @@ const himanshuData = {
         id: "tcs",
         title: "Full Stack Developer",
         company: "Tata Consultancy Services",
-        logo: "/logos/tcs.svg",
+        logo: "/logos/tcs.png",
         duration: "Jul 2021 - Dec 2022",
         description:
           "Developed and maintained enterprise applications for Fortune 500 clients, focusing on scalability and performance.",
@@ -181,7 +182,7 @@ const himanshuData = {
         id: "tcs-intern",
         title: "Software Engineering Intern",
         company: "Tata Consultancy Services",
-        logo: "/logos/tcs.svg",
+        logo: "/logos/tcs.png",
         duration: "Jan 2021 - Jun 2021",
         description:
           "Contributed to full-stack development projects, learned industry best practices, and collaborated with cross-functional teams.",
@@ -196,7 +197,7 @@ const himanshuData = {
         id: "humaps-intern",
         title: "Frontend Development Intern",
         company: "Humaps",
-        logo: "/logos/humaps.svg",
+        logo: "/logos/humaps.png",
         duration: "Jun 2020 - Dec 2020",
         description:
           "Developed responsive web interfaces and collaborated with designers to create intuitive user experiences.",
@@ -233,7 +234,7 @@ const himanshuData = {
         featured: true,
         image:
           "https://images.unsplash.com/photo-1611974765270-ca12586343bb?q=80&w=2070&auto=format&fit=crop",
-        logo: "/logos/afm.svg",
+        logo: "/logos/afm.png",
       },
       {
         id: "grief-navigator",
@@ -246,7 +247,7 @@ const himanshuData = {
         featured: false,
         image:
           "https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=2070&auto=format&fit=crop",
-        logo: "/logos/grief-navigator.svg",
+        logo: "/logos/grief-navigator.png",
       },
       {
         id: "valerie-ai",
@@ -259,7 +260,7 @@ const himanshuData = {
         featured: true,
         image:
           "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop",
-        logo: "/logos/valerie-ai.svg",
+        logo: "/logos/valerie.svg",
       },
       {
         id: "disability-dynamics",
@@ -272,7 +273,7 @@ const himanshuData = {
         featured: false,
         image:
           "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=2070&auto=format&fit=crop",
-        logo: "/logos/disability-dynamics.svg",
+        logo: "/logos/disability-dynamics.png",
       },
       {
         id: "remember-publisher",
@@ -285,7 +286,7 @@ const himanshuData = {
         featured: false,
         image:
           "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2070&auto=format&fit=crop",
-        logo: "/logos/remember-publisher.svg",
+        logo: "/logos/remember-press.png",
       },
     ],
   },
@@ -298,6 +299,7 @@ const sahilData = {
   currentCompany: "HSBC",
   companyUrl: "https://www.hsbc.com/",
   calLink: "https://cal.com/sahil-gupta-7/15min?overlayCalendar=true",
+  resume: "/sahil-resume.pdf",
   navigation: [
     { label: "Builds", href: "/builds" },
     { label: "Client Projects", href: "/client-projects" },

@@ -17,18 +17,18 @@ export default function ChangelogPage() {
           <motion.div
             key={experience.id}
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{
               duration: 0.3,
               delay: 0.3 + index * 0.1,
               ease: "easeOut",
             }}
-            className="flex gap-6 md:gap-8 group"
+            className="flex gap-4 sm:gap-6 group"
           >
             {/* Company Logo */}
             <div className="shrink-0">
-              <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center overflow-hidden border border-border">
+              <div className="w-12 h-12 p-1 md:w-16 md:h-16 rounded-2xl bg-gray-900 dark:bg-gray-50 flex items-center justify-center overflow-hidden border border-border mt-1">
                 <Image
                   src={experience.logo}
                   alt={`${experience.company} logo`}

@@ -9,7 +9,13 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useContext } from "react";
 
-const ClientProjectCard = ({ project, index }: { project: any; index: number }) => {
+const ClientProjectCard = ({
+  project,
+  index,
+}: {
+  project: any;
+  index: number;
+}) => {
   const { currentIndex } = useContext(CarouselContext);
 
   return (
@@ -23,22 +29,25 @@ const ClientProjectCard = ({ project, index }: { project: any; index: number }) 
         content: (
           <div
             className={cn(
-              "absolute h-full w-full inset-0 z-40 grow flex flex-col justify-between p-8 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all ease-in-out pointer-events-none group-hover:pointer-events-auto",
+              "absolute h-full w-full inset-0 z-40 grow flex flex-col justify-between p-5 sm:p-6 md:p-8 opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all ease-in-out pointer-events-none group-hover:pointer-events-auto",
               currentIndex === index && "opacity-100 translate-y-0"
             )}
           >
             {/* Logo */}
-            <div className="absolute top-8 right-8 w-12 h-12 md:w-16 md:h-16">
-              <Image
-                src={project.logo}
-                alt={`${project.name} logo`}
-                fill
-                className="object-contain"
-              />
+            <div className="absolute top-5 right-5 md:top-8 md:right-8 w-12 h-12 md:w-16 md:h-16">
+              <div className="w-full h-full rounded-full overflow-hidden bg-black p-2 flex items-center justify-center">
+                <Image
+                  src={project.logo}
+                  alt={`${project.name} logo`}
+                  height={42}
+                  width={42}
+                  className="object-contain"
+                />
+              </div>
             </div>
 
             {/* Content Container */}
-            <div className="text-left mt-28 flex flex-col gap-4 w-md">
+            <div className="text-left mt-18 sm:mt-24 md:mt-28 flex flex-col gap-4 w-3xs sm:w-2xs md:w-md">
               {/* Description */}
               <p className="text-sm md:text-base leading-relaxed text-white/90 font-sans">
                 {project.description}

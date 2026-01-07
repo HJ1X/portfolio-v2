@@ -1,11 +1,11 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { data } from "@/lib/data";
-import Link from "next/link";
-import { Github, Twitter, Calendar } from "lucide-react";
+import { Calendar, File, Github } from "lucide-react";
 import { motion } from "motion/react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -59,12 +59,12 @@ export default function Home() {
                   <Github className="w-5 h-5" />
                 </Link>
                 <Link
-                  href={data.social.twitter}
+                  href={data.resume}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full hover:bg-muted transition-colors"
                 >
-                  <Twitter className="w-5 h-5" />
+                  <File className="w-5 h-5" />
                 </Link>
               </div>
             </motion.div>
