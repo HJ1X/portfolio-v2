@@ -300,7 +300,7 @@ const sahilData = {
   calLink: "https://cal.com/sahil-gupta-7/15min?overlayCalendar=true",
   navigation: [
     { label: "Builds", href: "/builds" },
-    { label: "Client Projects", href: "/work" },
+    { label: "Client Projects", href: "/client-projects" },
     { label: "Writings", href: "/writings" },
     { label: "Contact", href: "/contact" },
   ],

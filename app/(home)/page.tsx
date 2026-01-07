@@ -13,7 +13,7 @@ export default function Home() {
       <div className="container mx-auto w-full px-7 lg:px-8 h-full">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 lg:gap-20 items-start lg:items-center h-full">
           {/* Left Content - Positioned slightly above center */}
-          <div className="flex flex-col gap-4 md:gap-6 lg:gap-8 justify-center pt-12 md:pt-16 lg:pt-0">
+          <div className="flex flex-col gap-4 md:gap-6 lg:gap-8 justify-center pt-12 md:pt-16 lg:pt-0 z-10">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
