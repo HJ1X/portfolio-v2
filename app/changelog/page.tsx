@@ -28,12 +28,12 @@ export default function ChangelogPage() {
           >
             {/* Company Logo */}
             <div className="shrink-0">
-              <div className="w-12 h-12 p-1 md:w-16 md:h-16 rounded-2xl bg-gray-900 dark:bg-gray-50 flex items-center justify-center overflow-hidden border border-border mt-1">
+              <div className="w-12 h-12 p-1 md:w-16 md:h-16 rounded-2xl bg-gray-200 dark:bg-gray-50 flex items-center justify-center overflow-hidden border border-border mt-1">
                 <Image
                   src={experience.logo}
                   alt={`${experience.company} logo`}
-                  width={64}
-                  height={64}
+                  width={experience.id === "hsbc" || experience.id === "capgemini" ? 128 : 64}
+                  height={experience.id === "hsbc" || experience.id === "capgemini" ? 128 : 64}
                   className="w-full h-full object-contain p-2"
                 />
               </div>

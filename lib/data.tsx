@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Highlight } from "@/components/ui/hero-highlight";
+import { label } from "motion/react-client";
 
 const profile = process.env.NEXT_PUBLIC_PROFILE;
 
@@ -302,7 +303,8 @@ const sahilData = {
   resume: "/sahil-resume.pdf",
   navigation: [
     { label: "Builds", href: "/builds" },
-    { label: "Client Projects", href: "/client-projects" },
+    { label: "Projects", href: "/client-projects" },
+    { label: "Changelog", href: "/changelog" },
     { label: "Writings", href: "/writings" },
     { label: "Contact", href: "/contact" },
   ],
@@ -381,9 +383,6 @@ const sahilData = {
       subline2:
         "From automating job applications to crafting custom software solutions.",
     },
-    ui: {
-      viewCreation: "View Creation",
-    },
     items: [
       {
         id: "naukri",
@@ -427,65 +426,68 @@ const sahilData = {
     },
     fullTime: [
       {
-        id: "rapidstart",
-        title: "Senior Full Stack Developer",
-        company: "Rapidstart",
-        logo: "/logos/rapidstart.svg",
-        duration: "Jan 2023 - Present",
+        id: "hsbc",
+        title: "Senior Software Engineer",
+        company: "HSBC",
+        logo: "/logos/hsbc.png",
+        duration: "Jun 2025 - Present",
         description:
-          "Leading development of enterprise SaaS applications, architecting scalable solutions, and mentoring junior developers.",
-        technologies: ["React", "Node.js", "TypeScript", "PostgreSQL", "AWS"],
+          "Building core Prime Finance systems that process high-volume trade and position data across global markets, supporting pricing, margining, and financing workflows at scale.",
+        technologies: [
+          "Java",
+          "Reactive Java",
+          "Micronaut",
+          "GCP",
+          "BigQuery",
+          "Terraform",
+        ],
         achievements: [
-          "Reduced API response time by 60% through optimization",
-          "Led migration to microservices architecture",
-          "Implemented CI/CD pipeline reducing deployment time by 80%",
+          "Built microservices for the Financing Against Securities platform serving global Prime Finance trade and position data",
+          "Designed an SOI service aggregating instrument identifiers across multiple trading systems to enable consistent pricing and margin workflows",
+          "Reworked OTC trade processing to a streaming model, reducing memory usage by ~40% and improving stability during peak trading hours",
+          "Improved data access by partitioning high-volume tables and enhancing ingestion APIs, reducing read latency by ~30%",
+          "Migrated Sophis IA, MTM/EOD, and OTC services to a non-blocking, reactive execution model, improving performance and resiliency",
         ],
       },
       {
         id: "tcs",
-        title: "Full Stack Developer",
+        title: "Software Engineer",
         company: "Tata Consultancy Services",
-        logo: "/logos/tcs.svg",
-        duration: "Jul 2021 - Dec 2022",
+        logo: "/logos/tcs.png",
+        duration: "Jul 2022 - Jun 2025",
         description:
-          "Developed and maintained enterprise applications for Fortune 500 clients, focusing on scalability and performance.",
-        technologies: ["Angular", "Java", "Spring Boot", "MySQL", "Docker"],
+          "Worked on enterprise SaaS platforms focused on developer productivity, security assessments, and AI-assisted workflows.",
+        technologies: [
+          "Java",
+          "Spring Boot",
+          "Spring Cloud",
+          "React",
+          "Azure",
+          "OpenAI",
+          "Docker",
+        ],
         achievements: [
-          "Delivered 5+ client projects on time and within budget",
-          "Improved application performance by 40%",
-          "Mentored 3 junior developers",
+          "Developed REST APIs for code validation and assessment workflows, improving platform reliability and security",
+          "Integrated GPT-3.5 and GPT-4 to power automated code-generation features, reducing job execution time by ~62%",
+          "Built AI-driven agents to reduce noise in assessment results while maintaining licensing compliance",
+          "Integrated security and functional assessment pipelines using Fortify, SonarQube, JUnit, JaCoCo, and Azure DevOps",
+          "Received the TCS Innovation Award for contributions to auto-spec generation in the Glow framework",
         ],
       },
       {
-        id: "tcs-intern",
+        id: "capgemini-intern",
         title: "Software Engineering Intern",
-        company: "Tata Consultancy Services",
-        logo: "/logos/tcs.svg",
-        duration: "Jan 2021 - Jun 2021",
+        company: "Capgemini",
+        logo: "/logos/capgemini.png",
+        duration: "Feb 2022 - May 2022",
         description:
-          "Contributed to full-stack development projects, learned industry best practices, and collaborated with cross-functional teams.",
-        technologies: ["React", "Node.js", "MongoDB", "Express"],
+          "Contributed to internal platforms by building user-facing features that improved discoverability and engagement.",
+        technologies: ["React", "Tailwind CSS", "JavaScript"],
         achievements: [
-          "Built internal tool used by 50+ team members",
-          "Received pre-placement offer",
-          "Completed training in Agile methodologies",
+          "Built a course management dashboard, improving enrollment visibility and reducing support queries",
+          "Improved platform engagement by ~25% through UI and UX enhancements",
         ],
-      },
-      {
-        id: "humaps-intern",
-        title: "Frontend Development Intern",
-        company: "Humaps",
-        logo: "/logos/humaps.svg",
-        duration: "Jun 2020 - Dec 2020",
-        description:
-          "Developed responsive web interfaces and collaborated with designers to create intuitive user experiences.",
-        technologies: ["React", "JavaScript", "CSS3", "Figma"],
-        achievements: [
-          "Redesigned company website increasing user engagement by 35%",
-          "Implemented responsive design across all pages",
-          "Created reusable component library",
-        ],
-      },
+      }
     ],
     clientProjects: [
       {
@@ -635,4 +637,4 @@ if (profile === "HIMANSHU") {
 } else {
   data = sahilData;
 }
-export type SiteData = typeof himanshuData;
+export type SiteData = typeof sahilData;
