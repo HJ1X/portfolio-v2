@@ -1,5 +1,4 @@
 import { Award, Quote } from "lucide-react";
-import React from "react";
 
 const ExperienceDetails = ({ log }: { log: any }) => {
   return (
