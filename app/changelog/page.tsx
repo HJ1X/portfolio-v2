@@ -2,11 +2,11 @@
 
 import ContentLayout from "@/components/ContentLayout";
 import { data } from "@/lib/data";
-import Image from "next/image";
 import { motion } from "motion/react";
-import ExperienceDetails from "./ExperienceDetails";
-import EducationDetails from "./EducationDetails";
+import Image from "next/image";
 import { FC } from "react";
+import EducationDetails from "./EducationDetails";
+import ExperienceDetails from "./ExperienceDetails";
 
 const componentMap: Record<string, FC<{ log: any }>> = {
   experience: ExperienceDetails,
