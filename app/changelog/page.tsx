@@ -5,13 +5,13 @@ import { data } from "@/lib/data";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { FC } from "react";
-import EducationDetails from "./EducationDetails";
-import ExperienceDetails from "./ExperienceDetails";
+// import EducationDetails from "./EducationDetails";
+// import ExperienceDetails from "./ExperienceDetails";
 
-const componentMap: Record<string, FC<{ log: any }>> = {
-  experience: ExperienceDetails,
-  education: EducationDetails,
-};
+// const componentMap: Record<string, FC<{ log: any }>> = {
+//   experience: ExperienceDetails,
+//   education: EducationDetails,
+// };
 
 export default function ChangelogPage() {
   return (
@@ -22,7 +22,7 @@ export default function ChangelogPage() {
     >
       <div className="space-y-8 sm:space-y-10 md:space-y-12 pb-16 pt-2 md:pt-0">
         {data.changelog.items.map((log: any, index: number) => {
-          const Comp = componentMap[log.type];
+          // const Comp = componentMap[log.type];
 
           return (
             <motion.div
@@ -51,7 +51,7 @@ export default function ChangelogPage() {
               </div>
 
               {/* Experience Details */}
-              <Comp log={log} />
+              {/* <Comp log={log} /> */}
             </motion.div>
           );
         })}
