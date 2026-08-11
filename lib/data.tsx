@@ -212,20 +212,19 @@ const himanshuData = {
     subline2: "Full-time roles and career milestones.",
     items: [
       {
-        id: "tcs",
+        id: "toptal",
         type: "experience",
-        title: "Senior Software Engineer",
-        company: "Tata Consultancy Services",
-        logo: "/logos/tcs.png",
-        duration: "Dec 2023 - Present",
+        title: "Software Engineer",
+        company: "Toptal",
+        logo: "/logos/toptal.svg",
+        duration: "Mar 2026 - Present",
         description:
-          "Developed enterprise SaaS platform for Product Delivery and talent engagement, engineering interactive AI workbenches, in-browser code editors, and RAG-based agents capable of assisting complex user workflows.",
-        awards: ["Young Innovator"],
+          "Engineered a multi-agent AI pipeline that automates M&A due diligence and evolved it into a billable product with a marketing site, UI, and backend services.",
       },
       {
         id: "novacrafts",
         type: "experience",
-        title: "Co-Founder and Lead Engineer",
+        title: "Co-Founder",
         company: "NovaCrafts.AI",
         logo: "/logos/novacraftsai.png",
         duration: "Nov 2025 - Present",
@@ -248,6 +247,17 @@ const himanshuData = {
               "Himanshu is a focused engineer who consistently delivers complex technical requirements with minimal supervision. He successfully took ownership of our multi-agent infrastructure, scaling our AI phone backend to handle over 10k+ monthly calls.",
           },
         ],
+      },
+      {
+        id: "tcs",
+        type: "experience",
+        title: "Senior Software Engineer",
+        company: "Tata Consultancy Services",
+        logo: "/logos/tcs.png",
+        duration: "Dec 2023 - Feb 2025",
+        description:
+          "Developed enterprise SaaS platform for Product Delivery and talent engagement, engineering interactive AI workbenches, in-browser code editors, and RAG-based agents capable of assisting complex user workflows.",
+        awards: ["Young Innovator"],
       },
       {
         id: "tcs",
