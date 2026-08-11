@@ -40,6 +40,11 @@ export const metadata: Metadata = {
     description,
     images: [data.image],
   },
+  ...(process.env.NEXT_PUBLIC_PROFILE === "HIMANSHU" && {
+    verification: {
+      google: "Aj3g2jUuog2iSIZ-9jzg8Gkfh3f_1p_IFROBoaSpz7o",
+    },
+  }),
 };
 
 export default function RootLayout({
