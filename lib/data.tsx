@@ -140,7 +140,7 @@ const himanshuData = {
   name: "Himanshu J.",
   fullName: "Himanshu Jaroli",
   title: "Building & shipping\nreal-world products.",
-  siteUrl: "https://himanshujaroli.netlify.app",
+  siteUrl: "https://himanshujaroli.novacraftsai.com",
   currentCompany: "RapidStart",
   companyUrl: "https://www.rapidstart.net/",
   calLink: "https://cal.com/himanshu-jaroli-cjbeah/30min",
