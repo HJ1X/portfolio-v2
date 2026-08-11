@@ -251,7 +251,7 @@ const himanshuData = {
       {
         id: "tcs",
         type: "experience",
-        title: "Senior Software Engineer",
+        title: "Product Engineer",
         company: "Tata Consultancy Services",
         logo: "/logos/tcs.png",
         duration: "Dec 2023 - Feb 2025",
