@@ -1,8 +1,9 @@
 import { Award, Quote } from "lucide-react";
+import ToptalBadge from "./ToptalBadge";
 
 const ExperienceDetails = ({ log }: { log: any }) => {
   return (
-    <div className="flex-1 flex justify-between items-start mt-1">
+    <div className="flex-1 flex flex-col lg:flex-row lg:justify-between items-center lg:items-start gap-12 mt-1">
       <div className="flex flex-col">
         <h3 className="text-xl md:text-2xl font-extrabold text-foreground tracking-wide">
           {log.company}
@@ -11,7 +12,7 @@ const ExperienceDetails = ({ log }: { log: any }) => {
           <p className="text-base md:text-lg">{log.title}</p>
           <p className="text-sm md:text-base text-foreground/50">{log.duration}</p>
         </div>
-        <p className="text-base md:text-lg text-foreground/80 leading-normal max-w-3xl pt-2.5">
+        <p className="text-base md:text-lg text-foreground/80 leading-normal max-w-2xl pt-2.5">
           {log.description}
         </p>
         {log.description2 && (
@@ -48,6 +49,7 @@ const ExperienceDetails = ({ log }: { log: any }) => {
           </div>
         )}
       </div>
+      {log.toptalBadge && <ToptalBadge />}
     </div>
   );
 };

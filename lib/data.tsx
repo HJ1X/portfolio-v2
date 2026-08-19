@@ -220,6 +220,7 @@ const himanshuData = {
         duration: "Mar 2026 - Present",
         description:
           "Engineered a multi-agent AI pipeline that automates M&A due diligence and evolved it into a billable product with a marketing site, UI, and backend services.",
+        toptalBadge: true,
       },
       {
         id: "novacrafts",
