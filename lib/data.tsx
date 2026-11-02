@@ -39,6 +39,21 @@ const commonData = {
       "From automating job applications to crafting custom software solutions.",
     items: [
       {
+        id: "dealclarity",
+        name: "DealClarity",
+        category: "AI-Powered SaaS · M&A",
+        description:
+          `DealClarity gives independent business buyers a fast, data-backed read on what a company is actually worth before they sign a Letter of Intent.
+
+          Built a multi-agent AI pipeline that parses uploaded financials to produce normalized EBITDA, blended valuation multiples, and DSCR feasibility checks — turning a multi-week diligence process into a report generated in minutes.`,
+        technologies: [],
+        year: "2026",
+        featured: true,
+        image: "/backgrounds/dealclarity.png",
+        logo: "/logos/dealclarity.png",
+        website: "https://dealclarity.ai/",
+      },
+      {
         id: "remember-press",
         name: "Remember Press",
         category: "AI-Assisted Writing Platform",
@@ -219,8 +234,19 @@ const himanshuData = {
         logo: "/logos/toptal.svg",
         duration: "Mar 2026 - Present",
         description:
-          "Engineered a multi-agent AI pipeline that automates M&A due diligence and evolved it into a billable product with a marketing site, UI, and backend services.",
+          "Partnered with global clients and distributed teams to architect and deliver high-impact, scalable software solutions across diverse product initiatives.",
         toptalBadge: true,
+      },
+      {
+        id: "tcs",
+        type: "experience",
+        title: "Product Engineer",
+        company: "Tata Consultancy Services",
+        logo: "/logos/tcs.png",
+        duration: "Dec 2023 - Present",
+        description:
+          "Developed enterprise SaaS platform for Product Delivery and talent engagement, engineering interactive AI workbenches, in-browser code editors, and RAG-based agents capable of assisting complex user workflows.",
+        awards: ["Young Innovator"],
       },
       {
         id: "novacrafts",
@@ -248,17 +274,6 @@ const himanshuData = {
               "Himanshu is a focused engineer who consistently delivers complex technical requirements with minimal supervision. He successfully took ownership of our multi-agent infrastructure, scaling our AI phone backend to handle over 10k+ monthly calls.",
           },
         ],
-      },
-      {
-        id: "tcs",
-        type: "experience",
-        title: "Product Engineer",
-        company: "Tata Consultancy Services",
-        logo: "/logos/tcs.png",
-        duration: "Dec 2023 - Feb 2025",
-        description:
-          "Developed enterprise SaaS platform for Product Delivery and talent engagement, engineering interactive AI workbenches, in-browser code editors, and RAG-based agents capable of assisting complex user workflows.",
-        awards: ["Young Innovator"],
       },
       {
         id: "tcs",
@@ -343,27 +358,6 @@ const sahilData = {
     github: "https://github.com/Sahil2012/",
     twitter: "https://x.com/guptasahil7/",
     linkedin: "https://www.linkedin.com/in/sahil-gupta7/",
-  },
-  clientProjects: {
-    ...commonData.clientProjects,
-    items: [
-      {
-        id: "dealclarity",
-        name: "DealClarity",
-        category: "AI-Powered SaaS · M&A",
-        description:
-          `DealClarity gives independent business buyers a fast, data-backed read on what a company is actually worth before they sign a Letter of Intent.
-
-          Built a multi-agent AI pipeline that parses uploaded financials to produce normalized EBITDA, blended valuation multiples, and DSCR feasibility checks — turning a multi-week diligence process into a report generated in minutes.`,
-        technologies: [],
-        year: "2026",
-        featured: true,
-        image: "/backgrounds/dealclarity.png",
-        logo: "/logos/dealclarity.png",
-        website: "https://dealclarity.ai/",
-      },
-      ...commonData.clientProjects.items,
-    ],
   },
   home: {
     title: (
